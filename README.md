@@ -1,4 +1,4 @@
 # Helli5-AP
-Helli 5 Advanced Python Class (2014 - 2015)
-
-bla bla bla ...
+ 
+Advanced Python Programming Course (2014 - 2015)
+Allame Helli 5 Middle School, Tehran
