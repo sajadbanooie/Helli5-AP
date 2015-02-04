@@ -11,7 +11,7 @@ class GUI(Widget):
         self.count = 1
         self.re = 1
         with self.canvas:
-            self.rect = Rectangle(source='13.png', size=self.size)
+            self.rect = Rectangle(source='images/13.png', size=self.size)
         Clock.schedule_interval(self.move, .20)
 
     def move(self, dt):
@@ -19,10 +19,10 @@ class GUI(Widget):
         if self.count == 6:
             self.count = 1
         if self.re == 1:
-            self.rect.source = str(self.count)+'.png'
+            self.rect.source = "images/"+str(self.count)+'.png'
             self.rect.pos = (self.rect.pos[0]+10, self.rect.pos[1])
         if self.re == 2:
-            self.rect.source = str(self.count+7)+'.png'
+            self.rect.source = "images/"+str(self.count+7)+'.png'
             self.rect.pos = (self.rect.pos[0]-10, self.rect.pos[1])
         if self.rect.pos[0] + self.rect.size[1] > Window.width:
             self.re = 2
