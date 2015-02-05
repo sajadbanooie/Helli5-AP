@@ -1,0 +1,58 @@
+#:import get Farsi.get
+<GameGUI>:
+    ActionBar:
+        pos_hint: {'top':1}
+        ActionView:
+            use_separator: True
+            ActionPrevious:
+                title: 'Back'
+                with_previous: True
+                on_press:root.goback()
+            ActionOverflow:
+            ActionButton:
+                text: 'Reset'
+                on_press:root.reset()
+
+            SoundIcon:
+                text: 'Btn0'
+
+
+<GUI>:
+    GridLayout:
+        rows:3
+        Button:
+            text:'Start Game'
+            font_size:'36px'
+            on_press:root.startgame()
+        Button:
+            font_size:'36px'
+            text:'How To Play'
+        Button:
+            font_size:'36px'
+            text:'About Us'
+    ActionBar:
+        pos_hint: {'top':1}
+        ActionView:
+            use_separator: True
+            ActionPrevious:
+                title:'XO(By Sajad Banooie)'
+                with_previous: False
+            ActionOverflow:
+            SoundIcon:
+                text: 'Btn0'
+            ActionButton:
+                text: 'Settings'
+
+<SGUI>:
+    ActionBar:
+        ActionView:
+            use_separator: True
+            ActionPrevious:
+                title:'XO(By Sajad Banooie)'
+                with_previous: False
+            ActionOverflow:
+            ActionButton:
+                text: 'reset'
+
+
+
